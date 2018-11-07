@@ -3,8 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/LensCritiqueData"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/TDGAPI"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="/local/pascal/Documents/jai/TPJDBC/lenscritique-data.jar"/>
+	<classpathentry kind="lib" path="/local/pascal/Documents/jai/TPJDBC/tdg-api.jar"/>
+	<classpathentry kind="lib" path="/local/pascal/Documents/jai/db-derby-10.14.2.0-bin/lib/derby.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

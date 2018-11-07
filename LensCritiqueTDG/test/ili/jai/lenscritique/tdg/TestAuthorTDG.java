@@ -10,12 +10,15 @@ import java.sql.SQLException;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
+import org.junit.runners.MethodSorters;
 
 import ili.jai.lenscritique.data.Author;
 import ili.jai.tdg.api.TDGRegistry;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestAuthorTDG {
 
 	private AuthorTDG atdg;
@@ -37,10 +40,11 @@ public class TestAuthorTDG {
 
 	@Test
 	public void test1Emptybase() throws SQLException {
+		atdg = TDGRegistry.findTDG(Author.class);
 		assertNull(atdg.findById(10));
 	}
 
-	@Ignore
+	@Test
 	public void test2InsertingElement() throws SQLException {
 		Author t = new Author();
 		t.setPseudo("Gile");
@@ -53,7 +57,7 @@ public class TestAuthorTDG {
 		assertSame(t, t2);
 	}
 
-	@Ignore
+	@Test
 	public void test3UpdatingElement() throws SQLException {
 		Author t = atdg.findById(1);
 		assertEquals("Gile", t.getPseudo());
@@ -64,7 +68,7 @@ public class TestAuthorTDG {
 		assertEquals("Jean", t2.getPseudo());
 	}
 
-	@Ignore
+	@Test
 	public void test4DeletingElement() throws SQLException {
 		Author t = atdg.findById(1);
 		assertEquals("Jean", t.getPseudo());
@@ -72,7 +76,7 @@ public class TestAuthorTDG {
 		assertNull(atdg.findById(1));
 	}
 
-	@Ignore
+	@Test
 	public void test5RefreshElement() throws SQLException {
 		Author t = new Author();
 		t.setPseudo("Gile");

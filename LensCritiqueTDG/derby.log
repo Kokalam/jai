@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Nov 07 13:02:01 CET 2018:
+Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579) : instance a816c00e-0166-ee0d-0057-00000ca22630 
+dans le répertoire de base de données /local/pascal/Documents/jai/LensCritiqueTDG/SYVONDB avec le chargeur de classe sun.misc.Launcher$AppClassLoader@5a07e868
+Chargé de file:/local/pascal/Documents/jai/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_172-b11
+user.dir=/local/pascal/Documents/jai/LensCritiqueTDG
+os.name=Linux
+os.arch=amd64
+os.version=4.15.0-24-generic
+derby.system.home=null
+Chargeur de classe de la base de données démarré - derby.database.classpath = ''
